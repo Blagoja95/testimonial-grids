@@ -1,0 +1,176 @@
+:root {
+  --Moderate-violet: hsl(263, 55%, 52%);
+  --ligth-violet: hsl(263, 55%, 65%);
+  --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  /* ### Neutral */
+
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.attribution {
+  padding: 1rem;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.main {
+  height: 100%;
+}
+
+.main,
+.attribution {
+  background-color: var(--light-grayish-blue);
+}
+
+.container {
+  margin: 10rem auto;
+  display: grid;
+  grid-template-columns: 33rem;
+  grid-template-rows: 44rem 24rem 22rem 38rem 44rem;
+  row-gap: 3rem;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* card */
+.card {
+  padding: 2rem 3rem 3rem 3rem;
+  border-radius: 1rem;
+  z-index: 0;
+}
+
+.z-index {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+/*  profile */
+.profile-card {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.profile-img {
+  border-radius: 100%;
+  width: 3rem;
+}
+
+.profile-info {
+  flex-direction: column;
+  padding-left: 1rem;
+  align-items: flex-start;
+}
+
+.profile-name,
+.quote,
+.profile-status {
+  color: var(--light-gray);
+}
+
+.profile-name {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.profile-status {
+  opacity: 50%;
+}
+
+.title {
+  color: var(--light-grayish-blue);
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.quote {
+  opacity: 70%;
+  line-height: 1.2;
+}
+
+/* Daniel */
+.daniel {
+  position: relative;
+  background-color: var(--Moderate-violet);
+}
+.daniel::before {
+  content: "";
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url("/src/images/bg-pattern-quotation.svg");
+  transform: translate(-40%, 0%);
+  z-index: -1;
+}
+
+.daniel .profile-img {
+  border: 2px solid var(--ligth-violet);
+}
+
+/* Jonathan */
+.jonathan {
+  background-color: var(--Very-dark-grayish-blue);
+}
+
+/* Jeanette */
+.jeanette {
+  background-color: var(--White);
+}
+
+.jeanette .profile-name,
+.jeanette .profile-status,
+.jeanette .title,
+.jeanette .quote {
+  color: var(--Very-dark-grayish-blue);
+}
+
+/* Patric */
+.patrick {
+  background-color: var(--Very-dark-blackish-blue);
+}
+
+.patrick .profile-img {
+  border: 2px solid var(--ligth-violet);
+}
+
+.patrick .profile-name,
+.patrick .profile-status,
+.patrick .title,
+.patrick .quote {
+  color: var(--White);
+}
+
+/* Kira */
+/* i used jeanette class*/
