@@ -130,7 +130,7 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  background-image: url("/src/images/bg-pattern-quotation.svg");
+  background-image: url("../images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   transform: translate(10%, 5%);
   z-index: -1;
