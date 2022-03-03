@@ -115,7 +115,7 @@ body {
 
 .quote {
   opacity: 70%;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 /* Daniel */
@@ -125,13 +125,14 @@ body {
 }
 .daniel::before {
   content: "";
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   position: absolute;
   top: 0;
   right: 0;
   background-image: url("/src/images/bg-pattern-quotation.svg");
-  transform: translate(-40%, 0%);
+  background-repeat: no-repeat;
+  transform: translate(10%, 5%);
   z-index: -1;
 }
 
@@ -144,15 +145,16 @@ body {
   background-color: var(--Very-dark-grayish-blue);
 }
 
-/* Jeanette */
-.jeanette {
+/* Jeanette  and Kira style class*/
+
+.same-class {
   background-color: var(--White);
 }
 
-.jeanette .profile-name,
-.jeanette .profile-status,
-.jeanette .title,
-.jeanette .quote {
+.same-class .profile-name,
+.same-class .profile-status,
+.same-class .title,
+.same-class .quote {
   color: var(--Very-dark-grayish-blue);
 }
 
@@ -173,4 +175,4 @@ body {
 }
 
 /* Kira */
-/* i used jeanette class*/
+/* i used jeanette class*/ ;
